@@ -1,0 +1,131 @@
+{
+  "sourceFolder": "C:/Users/dusti/OneDrive/Desktop/Website Pics",
+  "generatedAt": "2026-09-16T19:36:07.620Z",
+  "homepageImages": [
+    {
+      "file": "assets/images/homepage/dpo-hero.webp",
+      "source": "Highest Liked.jpg",
+      "use": "Hero — black tank mirror portrait",
+      "width": 720,
+      "height": 1280
+    },
+    {
+      "file": "assets/images/homepage/dpo-physique.webp",
+      "source": "20260824_023805_DcaASj-OyQe.jpg",
+      "use": "Physique — close front mirror portrait",
+      "width": 1650,
+      "height": 2200
+    },
+    {
+      "file": "assets/images/homepage/dpo-training.webp",
+      "source": "20250924_043944_DO-M4vijuvo_03.jpg",
+      "use": "Training — seated gym portrait",
+      "width": 1290,
+      "height": 1720
+    },
+    {
+      "file": "assets/images/homepage/dpo-back.webp",
+      "source": "20251201_192546_DRu4V0_kmz9_03.jpg",
+      "use": "Progress — back double-biceps portrait",
+      "width": 1290,
+      "height": 1720
+    },
+    {
+      "file": "assets/images/homepage/dpo-competition.webp",
+      "source": "20251124_181551_DRcuxkiAFOG_05.jpg",
+      "use": "Competition — stage portrait",
+      "width": 1440,
+      "height": 1440
+    },
+    {
+      "file": "assets/images/homepage/dpo-mindset.webp",
+      "source": "20251031_162449_DQeu_UOjmeY_02.jpg",
+      "use": "Mindset — arms-raised portrait",
+      "width": 1290,
+      "height": 1720
+    },
+    {
+      "file": "assets/images/homepage/dpo-aesthetic.webp",
+      "source": "20251010_071416_DPnrSoNDj9Q_13.jpg",
+      "use": "Aesthetic — overhead pose",
+      "width": 1290,
+      "height": 1720
+    },
+    {
+      "file": "assets/images/homepage/dpo-longevity.webp",
+      "source": "20260802_054425_DbhsDH_OQo-_02.jpg",
+      "use": "Longevity — gym training portrait",
+      "width": 1290,
+      "height": 1712
+    },
+    {
+      "file": "assets/images/homepage/dpo-detail.webp",
+      "source": "20260126_033411_DT9X3KaDtZt_03.jpg",
+      "use": "Detail — front mirror portrait",
+      "width": 1440,
+      "height": 1920
+    }
+  ],
+  "videos": [
+    {
+      "file": "assets/videos/post-show-pump.mp4",
+      "source": "20251125_031814_DRdszuwDgYT.mp4",
+      "poster": "assets/images/video-posters/post-show-pump.webp",
+      "bytes": 2420149
+    },
+    {
+      "file": "assets/videos/shredz.mp4",
+      "source": "20260329_202428_DWe0x14kTkm.mp4",
+      "poster": "assets/images/video-posters/shredz.webp",
+      "bytes": 3767159
+    },
+    {
+      "file": "assets/videos/one-day.mp4",
+      "source": "20260724_224633_DbMWE4UuBz9.mp4",
+      "poster": "assets/images/video-posters/one-day.webp",
+      "bytes": 1622542
+    },
+    {
+      "file": "assets/videos/aesthetic-closeup.mp4",
+      "source": "20260806_173650_DbtQ6LqAx08.mp4",
+      "poster": "assets/images/video-posters/aesthetic-closeup.webp",
+      "bytes": 1994695
+    },
+    {
+      "file": "assets/videos/natty-vegan-middle-schooler.mp4",
+      "source": "20260812_005513_Db67DDSuEgz.mp4",
+      "poster": "assets/images/video-posters/natty-vegan-middle-schooler.webp",
+      "bytes": 1524290
+    },
+    {
+      "file": "assets/videos/this-has-to-be-ai.mp4",
+      "source": "20260831_182559_DctubnLAS3-.mp4",
+      "poster": "assets/images/video-posters/this-has-to-be-ai.webp",
+      "bytes": 1747778
+    },
+    {
+      "file": "assets/videos/average-teen-on-netflix.mp4",
+      "source": "AQM9sqRdKDBCWpJ0K2VBmWdKcw4NxrmSNqm1JKLyHGwXBR_GOSrDEwzNXMfF6rnDLNHLnBqsBwqui7bvC5y_YQ115wypxuJcx0Anpb8.mp4",
+      "poster": "assets/images/video-posters/average-teen-on-netflix.webp",
+      "bytes": 1002252
+    },
+    {
+      "file": "assets/videos/skywalker-descendant.mp4",
+      "source": "AQMgApFwo-6E_qYo_fQQhFnwgUVwGAaAIHv2rFmKnJxDYEYvgyI3k2_FwA9Ki_C-IJiwgzGUFG-omiM7TO1riufBrqPG7T4HYu0BSmQ.mp4",
+      "poster": "assets/images/video-posters/skywalker-descendant.webp",
+      "bytes": 1194892
+    },
+    {
+      "file": "assets/videos/black-tank-check-in.mp4",
+      "source": "AQNrVZRYkU42FyagOxn-whGnWVZKbOJIHiUFIRxKTxZd-VVJNzrzgV-d7wVqI6VM4_KFZEP0Qewuvaf9UElUjW0pOgkuBXcPn0WshZA.mp4",
+      "poster": "assets/images/video-posters/black-tank-check-in.webp",
+      "bytes": 1092806
+    },
+    {
+      "file": "assets/videos/most-liked-check-in.mp4",
+      "source": "Most like video.mp4",
+      "poster": "assets/images/video-posters/most-liked-check-in.webp",
+      "bytes": 1041896
+    }
+  ]
+}
