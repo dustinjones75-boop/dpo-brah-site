@@ -6,6 +6,8 @@ A simple two-page static site prepared for GitHub and Netlify.
 
 - `index.html` — image-led homepage
 - `videos.html` — filterable video archive that loads a clip only after it is selected
+- `apply.html` — five-step branded coaching application handled by Netlify Forms
+- `thank-you.html` — confirmation page shown after a successful application
 - `assets/images/homepage/` — nine curated, optimized WebP images
 - `assets/images/video-posters/` — lightweight video preview images
 - `assets/videos/` — ten MP4 clips from the approved media folder
@@ -19,6 +21,10 @@ A simple two-page static site prepared for GitHub and Netlify.
 3. Select the GitHub repository.
 4. Leave the build command empty. The publish directory is already configured.
 5. Deploy the site.
+
+## Coaching applications
+
+Applications are collected under the Netlify form name `ascension-application`. Review them in the project’s **Forms** area. The form includes a spam honeypot and redirects successful submissions to `/thank-you`.
 
 ## Adding a homepage image
 

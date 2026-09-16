@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Apply for DPO Brah lifestyle coaching." />
+    <title>Ascend Application — DPO Brah</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="application-page">
+    <a class="skip-link" href="#main">Skip to application</a>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="index.html" aria-label="DPO Brah home">DPO BRAH</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="index.html">Home</a><a href="videos.html">Videos</a><a href="index.html#mindset">Mindset</a><a class="nav-cta" aria-current="page" href="/apply">Apply <span>→</span></a>
+      </nav>
+    </header>
+
+    <main id="main" class="apply-layout">
+      <aside class="apply-intro">
+        <p class="kicker">05 / Ascension application</p>
+        <h1>Ready to<br /><span>ascend?</span></h1>
+        <p>This is for people ready to commit, put in the work and become a higher version of themselves.</p>
+        <div class="apply-photo"><img src="assets/images/homepage/dpo-hero.webp" alt="DPO taking a gym mirror portrait in a black tank." /><em>Discipline.<br />Builds.<br />Freedom.</em></div>
+      </aside>
+
+      <section class="form-shell" aria-labelledby="form-title">
+        <div class="form-topline"><span id="step-label">Step 01 of 05</span><span>Usually 4–6 minutes</span></div>
+        <div class="form-progress" aria-hidden="true"><span data-progress></span></div>
+
+        <form name="ascension-application" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" data-application-form>
+          <input type="hidden" name="form-name" value="ascension-application" />
+          <input type="hidden" name="subject" value="New DPO Brah coaching application" />
+          <p class="honeypot"><label>Do not fill this out: <input name="bot-field" /></label></p>
+
+          <fieldset class="form-step is-active" data-step="0">
+            <legend><span>01</span><strong id="form-title">Tell me about you.</strong><small>Start with the basics.</small></legend>
+            <div class="field-grid two-col">
+              <label>Full name <input type="text" name="full-name" autocomplete="name" required /></label>
+              <label>Email address <input type="email" name="email" autocomplete="email" required /></label>
+            </div>
+            <label>Instagram handle <input type="text" name="instagram" autocomplete="off" placeholder="@yourusername" /></label>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="1" hidden>
+            <legend><span>02</span><strong>Define the target.</strong><small>What are we building toward?</small></legend>
+            <label>Primary goal
+              <select name="primary-goal" required><option value="">Select one</option><option>Build muscle</option><option>Lose body fat</option><option>Body recomposition</option><option>Improve training structure</option><option>Build better habits</option><option>Competition preparation</option><option>Other</option></select>
+            </label>
+            <label>What would a successful transformation look like for you? <textarea name="desired-outcome" rows="4" required></textarea></label>
+            <label>Preferred timeframe
+              <select name="timeframe" required><option value="">Select one</option><option>Next 8–12 weeks</option><option>Next 3–6 months</option><option>Next 6–12 months</option><option>Long-term lifestyle change</option></select>
+            </label>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="2" hidden>
+            <legend><span>03</span><strong>Show me the baseline.</strong><small>Where are you starting?</small></legend>
+            <label>Training experience
+              <select name="training-experience" required><option value="">Select one</option><option>New — less than 1 year</option><option>Developing — 1 to 3 years</option><option>Experienced — 3 to 5 years</option><option>Advanced — more than 5 years</option></select>
+            </label>
+            <label>Describe your current training routine. <textarea name="current-routine" rows="4" required></textarea></label>
+            <label>Anything that currently affects your ability to train? <textarea name="limitations" rows="3" placeholder="Optional — share only what is relevant to coaching"></textarea></label>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="3" hidden>
+            <legend><span>04</span><strong>Audit the lifestyle.</strong><small>The work outside the gym counts.</small></legend>
+            <label>How many days per week can you consistently train?
+              <select name="weekly-availability" required><option value="">Select one</option><option>2 days</option><option>3 days</option><option>4 days</option><option>5 days</option><option>6 or more days</option></select>
+            </label>
+            <div class="choice-field"><span>How consistent is your nutrition right now?</span>
+              <label><input type="radio" name="nutrition-consistency" value="Needs structure" required /> Needs structure</label>
+              <label><input type="radio" name="nutrition-consistency" value="Somewhat consistent" /> Somewhat consistent</label>
+              <label><input type="radio" name="nutrition-consistency" value="Highly consistent" /> Highly consistent</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="4" hidden>
+            <legend><span>05</span><strong>Make the decision.</strong><small>Why now?</small></legend>
+            <label>Why are you ready to make this change now? <textarea name="why-now" rows="5" required></textarea></label>
+            <label>How ready are you to follow a structured plan?
+              <select name="coaching-readiness" required><option value="">Select one</option><option>Ready to start now</option><option>Ready within the next month</option><option>Still exploring my options</option></select>
+            </label>
+            <label class="agreement"><input type="checkbox" name="commitment" value="I agree" required /><span>I understand that results require consistent effort and honest communication.</span></label>
+            <p class="privacy-note">Your answers are used only to review your coaching application. Do not include private medical or financial information.</p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button button-ghost form-back" type="button" data-form-back hidden>← Back</button>
+            <button class="button button-primary form-next" type="button" data-form-next>Next →</button>
+            <button class="button button-primary form-submit" type="submit" data-form-submit hidden>Submit application →</button>
+          </div>
+          <p class="form-error" role="alert" data-form-error></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark" href="index.html">DPO BRAH</a><nav><a href="index.html">Home</a><a href="videos.html">Videos</a><a href="https://www.instagram.com/dpo_brah/" target="_blank" rel="noreferrer">Instagram</a></nav><p>Discipline builds freedom.</p></footer>
+  </body>
+</html>

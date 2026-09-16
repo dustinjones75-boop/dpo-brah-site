@@ -6,6 +6,16 @@
   to = "/videos.html"
   status = 200
 
+[[redirects]]
+  from = "/apply"
+  to = "/apply.html"
+  status = 200
+
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
 [[headers]]
   for = "/assets/images/*"
   [headers.values]

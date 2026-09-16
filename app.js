@@ -78,3 +78,52 @@ dialog?.addEventListener('cancel', (event) => {
   event.preventDefault();
   closeDialog();
 });
+
+const applicationForm = document.querySelector('[data-application-form]');
+const formSteps = [...document.querySelectorAll('[data-step]')];
+const formBack = document.querySelector('[data-form-back]');
+const formNext = document.querySelector('[data-form-next]');
+const formSubmit = document.querySelector('[data-form-submit]');
+const formProgress = document.querySelector('[data-progress]');
+const formError = document.querySelector('[data-form-error]');
+const stepLabel = document.querySelector('#step-label');
+let currentStep = 0;
+
+const showFormStep = (index, moveFocus = true) => {
+  if (!formSteps.length) return;
+  currentStep = Math.max(0, Math.min(index, formSteps.length - 1));
+  formSteps.forEach((step, stepIndex) => {
+    const active = stepIndex === currentStep;
+    step.hidden = !active;
+    step.classList.toggle('is-active', active);
+  });
+  if (formBack) formBack.hidden = currentStep === 0;
+  if (formNext) formNext.hidden = currentStep === formSteps.length - 1;
+  if (formSubmit) formSubmit.hidden = currentStep !== formSteps.length - 1;
+  if (formProgress) formProgress.style.width = `${((currentStep + 1) / formSteps.length) * 100}%`;
+  if (stepLabel) stepLabel.textContent = `Step ${String(currentStep + 1).padStart(2, '0')} of ${String(formSteps.length).padStart(2, '0')}`;
+  if (formError) formError.textContent = '';
+  if (moveFocus) formSteps[currentStep]?.querySelector('input, select, textarea')?.focus();
+};
+
+const validateCurrentStep = () => {
+  const controls = [...(formSteps[currentStep]?.querySelectorAll('input, select, textarea') ?? [])];
+  const invalid = controls.find((control) => !control.checkValidity());
+  if (!invalid) return true;
+  if (formError) formError.textContent = 'Complete the required fields before continuing.';
+  invalid.reportValidity();
+  invalid.focus();
+  return false;
+};
+
+formNext?.addEventListener('click', () => {
+  if (validateCurrentStep()) showFormStep(currentStep + 1);
+});
+
+formBack?.addEventListener('click', () => showFormStep(currentStep - 1));
+
+applicationForm?.addEventListener('submit', (event) => {
+  if (!validateCurrentStep()) event.preventDefault();
+});
+
+if (applicationForm) showFormStep(0, false);
