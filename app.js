@@ -127,3 +127,24 @@ applicationForm?.addEventListener('submit', (event) => {
 });
 
 if (applicationForm) showFormStep(0, false);
+
+const depthScene = document.querySelector('[data-depth-scene]');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+if (depthScene) {
+  const resetDepth = () => {
+    depthScene.style.setProperty('--depth-x', '0px');
+    depthScene.style.setProperty('--depth-y', '0px');
+  };
+
+  depthScene.addEventListener('pointermove', (event) => {
+    if (reducedMotion.matches || event.pointerType === 'touch') return;
+    const bounds = depthScene.getBoundingClientRect();
+    const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 14;
+    const y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 10;
+    depthScene.style.setProperty('--depth-x', `${x.toFixed(1)}px`);
+    depthScene.style.setProperty('--depth-y', `${y.toFixed(1)}px`);
+  });
+
+  depthScene.addEventListener('pointerleave', resetDepth);
+}
